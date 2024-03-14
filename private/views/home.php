@@ -1,6 +1,6 @@
     <div class="flex justify-center items-center h-screen mt-8">
         <div class="w-3/4">
-        <h1 class="text-3xl font-bold underline text-clifford my-8">Bienvenue sur notre site !</h1>
+        <h1 class="text-3xl font-bold underline text-clifford my-8">Bienvenue sur Book and Roll !</h1>
         
         <p class="italic">Ceci est le contenu de la page d'accueil.</p>
 
