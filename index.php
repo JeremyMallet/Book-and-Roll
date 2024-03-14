@@ -1,5 +1,6 @@
 <?php
     require 'config.php';
+    require 'private/utils/FrontUtils.php';
 
     // controlleur de post
     if (!empty($_GET['post'])) {
