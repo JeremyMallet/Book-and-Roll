@@ -3,7 +3,7 @@
                 <div class="container-fluid">
                     <a class="navbar-brand rounded hover:bg-gray-50" href="#">Book and Roll</a>
                     <div class="header-emblem" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);">
-                        <img src="public/images/DALL·E-2024-03-14-15.06.png" alt="Emblème" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 3px solid #ffffff; box-shadow: 0 0 8px #000000;">
+                        <img src="public/images/DALL·E-2024-03-14-15.06.png" alt="Emblème" class="rotate-0 hover:rotate-[350deg] transition-all w-36 h-36 shadow-lg object-cover rounded-full hover:mt-36 hover:scale-150 border-4">
                     </div>
 
 

@@ -7,10 +7,9 @@ class FrontUtils
      * @param [type] $date
      * @return void
      */
-    public static function FormatDate($date)
-{
-    $dateObject = new DateTime($date);
-    return $dateObject->format('d/m/Y');
-}
-
+    public static function FormatDate($date,$format = 'd/m/Y')
+    {
+        $dateObject = new DateTime($date);
+        return $dateObject->format($format);
+    }
 }
