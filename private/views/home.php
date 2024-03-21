@@ -2,7 +2,7 @@
     <div class="w-3/4">
         <img src="public/images/DALL·E-2024-03-14-14.39.jpg" alt="Image d'accueil" class="w-full h-96 object-cover rounded-md shadow-md mb-8">
         <h1 class="text-3xl font-bold underline text-clifford my-8">Bienvenue sur Book and Roll !</h1>
-        <p class="italic">Ceci est le contenu de la page d'accueil.</p>
+        <p class="italic">Nous sommes heureux de vous accueillir ! Notre site vous permet de réserver votre place pour des événements de JDR locaux. 🎲</p>
 
         <p>Bienvenue sur Book And Roll, l'oasis numérique où les passionnés de jeux de rôle transforment l'encre et le papier en aventures épiques sans fin. Ici, les dés roulent, les héros se lèvent, et les légendes prennent vie, le tout à quelques clics de distance.</p><br>
 

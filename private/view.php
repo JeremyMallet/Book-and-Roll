@@ -15,7 +15,7 @@
                     var tables = JSON.parse(response);
                     var htmlContent = "";
                     tables.forEach(function(table) {
-                        htmlContent += "<p>" + table.nom + "</p>"; // Exemple de contenu, à adapter selon les données de tes tables
+                        htmlContent += "<p>" + table.nom + "</p>";
                     });
                     $('#tablesEvenement').html(htmlContent);
                 }
