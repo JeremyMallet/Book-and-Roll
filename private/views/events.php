@@ -14,7 +14,9 @@ if (empty($evenements)) {
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">';
 
         foreach ($evenements as $evenement) {
-                echo '<div class="bg-white shadow-md rounded p-4">
+                echo '
+                <div class="bg-white shadow-md rounded p-4">
+                <img src="public/images/DALL·E-2024-03-14-14.39.jpg" alt="Image d\'accueil" class="w-full h-96 object-cover rounded-md shadow-md mb-8">
                 <h2 class="text-xl font-bold mb-2">' . htmlspecialchars($evenement['titre']) . '</h2>
                 <p class="text-sm mb-2">' . htmlspecialchars($evenement['description']) . '</p>
                 <p class="text-sm mb-2">Le ' . FrontUtils::FormatDate($evenement['date']) . '</p>
