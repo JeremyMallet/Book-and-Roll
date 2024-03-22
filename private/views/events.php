@@ -23,8 +23,10 @@ $evenements = $stmt->fetchAll();
         </div>
     </div>
     <script>
-        OpenModalEvenement(){
-            Modal.open();
+        function OpenModalEvenement(){
+            Modal.open('<div class="text-xl font-semibold py-5 px-5 border-b">This is Toto header</div>', 
+            '<div class="py-5 px-5">Toto body</div>', 
+            '<div class="py-5 px-5 border-t">This is Toto footer</div>');
         }
     </script>
 <?php endif; ?>
