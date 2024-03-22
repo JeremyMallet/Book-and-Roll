@@ -1,7 +1,8 @@
 <?php
-$sql = 'SELECT * FROM evenements';
-$stmt = $pdo->query($sql);
-$evenements = $stmt->fetchAll();
+
+$evenementObject = new Evenement($pdo);
+$evenements = $evenementObject->readAll();
+
 ?>
 <?php if (empty($evenements)) : ?>
     <p>Aucun événement à afficher.</p>
