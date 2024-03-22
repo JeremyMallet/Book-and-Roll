@@ -17,17 +17,10 @@ $evenements = $evenementObject->readAll();
                         <h2 class="text-xl font-bold mb-2"><?= htmlspecialchars($evenement['titre']) ?></h2>
                         <p class="text-sm mb-2"><?= htmlspecialchars($evenement['description']) ?></p>
                         <p class="text-sm mb-2">Le <?= FrontUtils::FormatDate($evenement['date']) ?></p>
-                        <a onclick="OpenModalEvenement();" class="voir-evenement bg-blue-500 text-white rounded p-2 hover:bg-blue-600">Voir l\'événement</a>
+                        <a href="?view=home" class="voir-evenement bg-blue-500 text-white rounded p-2 hover:bg-blue-600">Voir l\'événement</a>
                     </div>
                 <?php endforeach; ?>
             </div>
         </div>
     </div>
-    <script>
-        function OpenModalEvenement(){
-            Modal.open('<div class="text-xl font-semibold py-5 px-5 border-b">This is Toto header</div>', 
-            '<div class="py-5 px-5">Toto body</div>', 
-            '<div class="py-5 px-5 border-t">This is Toto footer</div>');
-        }
-    </script>
 <?php endif; ?>

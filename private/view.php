@@ -15,7 +15,6 @@
 <body class="mt-20">
     <?php include('./private/layouts/header.php'); ?>
     <?php include('./private/views/' . $view . '.php'); ?>
-    <?php include('./private/views/table-modal.php'); ?>
     <?php include('./private/layouts/footer.php'); ?>
 </body>
 
