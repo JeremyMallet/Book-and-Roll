@@ -1,6 +1,7 @@
 <?php
     require 'config.php';
     require 'private/utils/FrontUtils.php';
+    require 'private/class/evenement.php';
 
     // controlleur de post
     if (!empty($_GET['post'])) {
