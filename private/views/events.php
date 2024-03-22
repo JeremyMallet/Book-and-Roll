@@ -1,5 +1,34 @@
+<script>
+    $(document).ready(function() {
+        $('.voir-evenement').click(function() {
+            var evenementId = $(this).data('evenement-id');
+
+            $('#modalEvenement').show();
+
+            $.ajax({
+                url: 'private/views/gettables.php',
+                type: 'GET',
+                data: {
+                    evenementId: evenementId
+                },
+                success: function(response) {
+                    var tables = JSON.parse(response);
+                    var htmlContent = "";
+                    tables.forEach(function(table) {
+                        htmlContent += "<p>" + table.nom + "</p>";
+                    });
+                    $('#tablesEvenement').html(htmlContent);
+                }
+
+            });
+        });
+
+        $('.close').click(function() {
+            $('#modalEvenement').hide();
+        });
+    });
+</script>
 <?php
-require 'config.php';
 
 $sql = 'SELECT * FROM evenements';
 $stmt = $pdo->query($sql);
