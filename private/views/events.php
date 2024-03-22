@@ -1,33 +1,3 @@
-<script>
-    $(document).ready(function() {
-        $('.voir-evenement').click(function() {
-            var evenementId = $(this).data('evenement-id');
-
-            $('#modalEvenement').show();
-
-            $.ajax({
-                url: 'private/views/gettables.php',
-                type: 'GET',
-                data: {
-                    evenementId: evenementId
-                },
-                success: function(response) {
-                    var tables = JSON.parse(response);
-                    var htmlContent = "";
-                    tables.forEach(function(table) {
-                        htmlContent += "<p>" + table.nom + "</p>";
-                    });
-                    $('#tablesEvenement').html(htmlContent);
-                }
-
-            });
-        });
-
-        $('.close').click(function() {
-            $('#modalEvenement').hide();
-        });
-    });
-</script>
 <?php
 $sql = 'SELECT * FROM evenements';
 $stmt = $pdo->query($sql);
@@ -46,10 +16,15 @@ $evenements = $stmt->fetchAll();
                         <h2 class="text-xl font-bold mb-2"><?= htmlspecialchars($evenement['titre']) ?></h2>
                         <p class="text-sm mb-2"><?= htmlspecialchars($evenement['description']) ?></p>
                         <p class="text-sm mb-2">Le <?= FrontUtils::FormatDate($evenement['date']) ?></p>
-                        <a href="#" class="voir-evenement bg-blue-500 text-white rounded p-2 hover:bg-blue-600" data-evenement-id="<?= htmlspecialchars($evenement['id']) ?>">Voir l\'événement</a>
+                        <a onclick="OpenModalEvenement();" class="voir-evenement bg-blue-500 text-white rounded p-2 hover:bg-blue-600">Voir l\'événement</a>
                     </div>
                 <?php endforeach; ?>
             </div>
         </div>
     </div>
+    <script>
+        OpenModalEvenement(){
+            Modal.open();
+        }
+    </script>
 <?php endif; ?>
