@@ -28,9 +28,14 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `reservations` (
-  `id` int(11) NOT NULL,
-  `nombre_places` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `table_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `nombre_places` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  FOREIGN KEY (`table_id`) REFERENCES `tables` (`id`),
+  FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; COLLATE=utf8mb4_general_ci;
 
 --
 -- Index pour les tables déchargées
