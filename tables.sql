@@ -40,7 +40,7 @@ CREATE TABLE `tables` (
 -- Déchargement des données de la table `tables`
 --
 
-INSERT INTO `tables` (`id`, `nom`, `decription`, `evenement`, `places_min`, `places_max`) VALUES
+INSERT INTO `tables` (`id`, `nom`, `description`, `evenement`, `places_min`, `places_max`) VALUES
 (2, 'DND', 'Tables donjon & Dragons', 2, 0, 0),
 (3, 'Knight', 'Serez vous a la hauteur?', 3, 0, 0),
 (4, 'Pathfinder', 'Gobelins a tuer !', 4, 0, 0);

@@ -17,7 +17,7 @@ $evenements = $evenementObject->readAll();
                         <h2 class="text-xl font-bold mb-2"><?= htmlspecialchars($evenement['titre']) ?></h2>
                         <p class="text-sm mb-2"><?= htmlspecialchars($evenement['description']) ?></p>
                         <p class="text-sm mb-2">Le <?= FrontUtils::FormatDate($evenement['date']) ?></p>
-                        <a href="?view=home" class="voir-evenement bg-blue-500 text-white rounded p-2 hover:bg-blue-600">Voir l\'événement</a>
+                        <a href="?view=eventdetail&event_id=<?= $evenement['id'] ?>" class="voir-evenement bg-blue-500 text-white rounded p-2 hover:bg-blue-600">Voir l'événement</a>
                     </div>
                 <?php endforeach; ?>
             </div>
