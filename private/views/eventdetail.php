@@ -27,6 +27,7 @@ if ($eventId > 0) {
             <div class="bg-white shadow-md rounded p-4">
                 <h3 class="text-xl font-bold mb-2"><?= htmlspecialchars($table['nom']) ?></h3>
                 <p class="text-sm mb-2"><?= htmlspecialchars($table['description']) ?></p>
+                <p class="text-sm mb-2">Places disponibles : ' . $table['places_disponibles'] . '</p>
             </div>
         <?php endforeach; ?>
     </div>
