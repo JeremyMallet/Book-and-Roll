@@ -48,6 +48,7 @@ CREATE TABLE `users` (
   `familyName` varchar(180) NOT NULL,
   `password` varchar(180) NOT NULL,
   `image` varchar(180) NOT NULL,
+  `creaDate` datetime NOT NULL DEFAULT current_timestamp(),
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
